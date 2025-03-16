@@ -45,11 +45,12 @@ Setelah berhasil melakukan instalasi Arduino IDE, silakan buka Arduino IDE terse
 
 ## Melihat Hasil Bacaan ADC Melalui Serial Monitor
 <br/> Untuk melihat hasil bacaan ADC yang dikirimkan oleh Arduino Uno kita ke PC kita melalui komunikasi serial, kita harus buka Serial Monitor terlebih
-dahulu. Pastikan `Serial Port` telah dipilih dengan benar di `Tools`/`Port`. Untuk membuka Serial Monitor, tekan tombol berikut.\
-<img src="https://github.com/BerlianOkaI/SIMP25_ADC-dan-Serial/blob/main/Gambar/Open%20Serial%20Monitor.png" alt="drawing"/>\
+dahulu. Pastikan `Serial Port` telah dipilih dengan benar di `Tools`/`Port`. Untuk membuka Serial Monitor, tekan tombol berikut. Alternatif lain adalah 
+dengan pergi ke `Tools`/`Serial Monitor`. Setelah itu, Serial Monitor akan muncul di bagian bawah Arduino IDE.\
+<img src="https://github.com/BerlianOkaI/SIMP25_ADC-dan-Serial/blob/main/Gambar/Open%20Serial%20Monitor%20(Marked).png" alt="drawing"/>\
 <br/> Selanjutnya, pilih nilai baud rate yang sesuai dengan baud rate yang kita setting untuk Arduino Uno di program kita sebelumnya,
 (dalam hal ini, kita telah set baud rate-nya sebesar 9600). Untuk mengenal apa itu baud rate (laju pengiriman bit), silakan [baca di sini](https://docs.arduino.cc/language-reference/en/functions/communication/serial/begin/).\
 <img src="https://github.com/BerlianOkaI/SIMP25_ADC-dan-Serial/blob/main/Gambar/Pilih%20Baud%20Rate.png" alt="drawing"/>\
-<br/> Setelah Arduino Uno dan PC kita terhubung via kabel USB, Serial Port dipilih, dan Baud Rate diatur, maka Serial Monitor (di bagian bawah Arduino IDE) akan menampilkan komunikasi Serial Arduino Uno, yakni hasil bacaan ADC kita.
+<br/> Setelah Arduino Uno dan PC kita terhubung via kabel USB, Serial Port dipilih, dan Baud Rate diatur, maka Serial Monitor (di bagian bawah Arduino IDE) akan menampilkan komunikasi Serial Arduino Uno berupa hasil bacaan ADC kita.
    
    
