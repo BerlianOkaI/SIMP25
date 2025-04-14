@@ -24,4 +24,4 @@ Repositori menyediakan contoh program yang dapat menunjukkan hasil bacaan temper
 5. Jika library tersebut berhasil di-*install*, maka di sketch yang akan kita buat kita dapat melakukan include file library tersebut dengan menuliskan `#include <LiquidCrystal.h>`. Pastikan Anda menaruh `#include <LiquidCrystal.h>` di bagian atas sebelum Anda menuliskan code di Sketch Arduino.
 
 ## Program Arduino Uno
-Silakan merujuk ke bagian [Example]()
+Silakan merujuk ke bagian [Example](https://github.com/BerlianOkaI/SIMP25/tree/main/LCD-dan-Button/Example)
