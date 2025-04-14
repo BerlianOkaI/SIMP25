@@ -24,7 +24,7 @@ Setelah berhasil melakukan instalasi Arduino IDE, silakan buka Arduino IDE terse
    <img src="https://github.com/BerlianOkaI/SIMP25_ADC-dan-Serial/blob/main/Gambar/Pilih%20Board%20Arduino.png" alt="drawing" width="800" />\
    <br/>
 4. **Tulis Program di Sketch**
-   <br/> Silakan ketik program kita di sketch tersebut untuk ADC dan Serial. Contoh program yang akan kita tulis dapat dilihat di directory `Example/SIMP25_ADCdanSerial` pada repository ini. Silakan pilih `SIMP25_ADCdanSerial.ino` untuk melihat [contoh program](https://github.com/BerlianOkaI/SIMP25_ADC-dan-Serial/blob/main/Example/SIMP25_ADCdanSerial/SIMP25_ADCdanSerial.ino) tersebut.\
+   <br/> Silakan ketik program kita di sketch tersebut untuk ADC dan Serial. Contoh program yang akan kita tulis dapat dilihat di directory `Example/SIMP25_ADCdanSerial` pada repository ini. Silakan pilih `SIMP25_ADCdanSerial.ino` untuk melihat [contoh program](https://github.com/BerlianOkaI/SIMP25/tree/main/ADC-dan-Serial/Example) tersebut.\
    <img src="https://github.com/BerlianOkaI/SIMP25_ADC-dan-Serial/blob/main/Gambar/Tulis%20Code.png" alt="drawing" />\
    <br/>
 5. **Compile Program Arduino**
