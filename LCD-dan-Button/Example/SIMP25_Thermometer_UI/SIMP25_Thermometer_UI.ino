@@ -99,7 +99,7 @@ void loop() {
           ui_ADC[uc_arrayIndex] = analogRead(A0);
      }
      // [Bacaan Temperatur ke LCD]
-     if (millis() - ul_LCDTimeMS >= SELANG_WAKTU_ADC)
+     if (millis() - ul_LCDTimeMS >= SELANG_WAKTU_LCD)
      {
           // Simpan Checkpoint waktu terbaru
           ul_LCDTimeMS = millis();
@@ -140,14 +140,14 @@ void loop() {
           // Terjadi Rising Edge (transisi tegangan LOW ke High)
           // yang mengindikasikan adanya penekanan tombol
           // > Hold/Unhold LCD (invert keadaan sebelumnya)
-          b_hold_lcd = ~b_hold_lcd;
+          b_hold_lcd = !b_hold_lcd;
           // > Update Checkpoint
           ul_DebounceMS = millis();
           // > Update LCD berdasarkan hold state
           if (b_hold_lcd){
                // [Keadaan Pause]
                // Tampilkan Huruf "H" pada LCD
-               lcd.setCursor(0, 1);
+               lcd.setCursor(15, 1);
                lcd.write('H');
           } else {
                // [Keadaan Unpause]
