@@ -19,4 +19,10 @@ Program ini dibuat berdasarkan [program sebelumnya](https://github.com/BerlianOk
    <br/> **Causes**
    <br/> >> _Perintah set cursor untuk LCD yang kurang tepat_
    <br/> **Fixes**
-   <br/> >> _Ubah nilai argumen col pada `lcd.setCursor(col, row)` dari `lcd.setCursor(0,1)` menjadi `lcd.setCursor(15,1)` sebelum memberikan perintah `lcd.write('H')` untuk bagian code yang dieksekusi ketika b_hold_lcd bernilai true saat tombol ditekan (bagian program: void loop())_
+   <br/> >> _Ubah nilai argumen col pada `lcd.setCursor(col, row)` dari `lcd.setCursor(0,1)` menjadi `lcd.setCursor(15,1)` sebelum memberikan perintah `lcd.write('H')` untuk bagian code yang dieksekusi ketika b_hold_lcd bernilai true saat tombol ditekan (bagian program: void loop())_\
+   <br/>
+4. Bacaan Temperatur sangat tidak tepat
+   <br/> **Causes**
+   <br/> >> _Bacaan temperatur dihitung dengan menggunakan fungsi `float fGetTemperature(float adc_value)` di mana pada definisi fungsi tersebut, terdapat tiga variabel `a`, `b`, dan `c` untuk menghitung temperatur dengan model kuadratik (untuk model linear, silakan ubah `a = 0`)_
+   <br/> **Fixes**
+   <br/> >> _Silakan ubah ketiga parameter tersebut berdasarkan hasil regresi masing-masing. Untuk regresi linear, silakan isi `a = 0` atau silakan modifikasi sendiri perhitungan temperatur yang tertera di `float fGetTemperature(float adc_value)`_ 
