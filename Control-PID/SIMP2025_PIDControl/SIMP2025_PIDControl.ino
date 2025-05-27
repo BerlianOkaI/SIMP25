@@ -125,7 +125,9 @@ void HeaterControl(float PIDOutput)
           PWM_DutyCycle_Value = (uint16_t)((float)TIMER1_TOP_VALUE * (PIDOutput / 100.0F));
      }
      // Set nilai OCR1A untuk mengontrol Duty Cycle PWM
+     cli();
      OCR1A = PWM_DutyCycle_Value;
+     sei();
 }
 
 void HardwareTimerSetup(void)
@@ -171,7 +173,7 @@ ISR(TIMER1_OVF_vect)
 {
      // Notifikasi loop utama untuk melakukan perhitungan PID
      b_PIDSampTimeFlag = true;
-     NyalakanHeater();
+     if (OCR1A > 0) NyalakanHeater();
 }
 bool asd = false;
 ISR(TIMER1_COMPA_vect)
